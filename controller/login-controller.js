@@ -3,10 +3,6 @@ let obj = require('../json/users');
 
 let controller = {};
 
-controller.getAll = async (req, res, next) => {
-    res.json(obj);
-};
-
 controller.create = async (req, res, next) => {
     let data = req.body;
     data.id = Math.floor(Math.random() * 1000);
